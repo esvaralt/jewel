@@ -1,0 +1,29 @@
+project:
+  type: book
+
+book:
+  title: "The jewel in the garden"
+  author: "bhangakhana"
+  date: "10/9/2025"
+  chapters:
+    - index.qmd
+    - intro.qmd
+    - summary.qmd
+    - references.qmd
+
+bibliography: references.bib
+
+format:
+  html:
+    theme:
+      - cosmo
+      - brand
+  pdf:
+    documentclass: scrreprt
+
+execute:
+   freeze: auto
+
+
+
+
