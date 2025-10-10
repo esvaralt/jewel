@@ -1,15 +1,20 @@
 project:
   type: book
 
+
+
 book:
   title: "The jewel in the garden"
   author: "bhangakhana"
   date: "10/9/2025"
   chapters:
     - index.qmd
-    - intro.qmd
+    - One.qmd
+    - Two.qmd
+    - Three.qmd
     - summary.qmd
     - references.qmd
+
 
 bibliography: references.bib
 
@@ -23,6 +28,8 @@ format:
 
 execute:
    freeze: auto
+
+
 
 
 
