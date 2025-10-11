@@ -21,6 +21,7 @@ book:
     - Three.qmd
     - summary.qmd
     - references.qmd
+  downloads: [pdf, epub]
 
 
 bibliography: references.bib
@@ -32,6 +33,8 @@ format:
       - sandstone
       - brand
   pdf:
+    documentclass: scrreprt
+  epub:
     documentclass: scrreprt
 
 execute:
