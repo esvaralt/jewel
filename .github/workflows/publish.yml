@@ -16,21 +16,21 @@ jobs:
     runs-on: ubuntu-latest
     permissions:
       contents: write
-      steps:
-      - name: Check out repository
-        uses: actions/checkout@v4
+    steps:
+    - name: Check out repository
+      uses: actions/checkout@v4
         
-      - name: Set up Quarto
-        uses: quarto-dev/quarto-actions/setup@v2
-        with: 
-          tinytex: true
+    - name: Set up Quarto
+      uses: quarto-dev/quarto-actions/setup@v2
+      with: 
+        tinytex: true
         
-      - name: Render and Publish
-        uses: quarto-dev/quarto-actions/publish@v2
-        with:  
-          target: gh-pages
-        env:
-          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+    - name: Render and Publish
+      uses: quarto-dev/quarto-actions/publish@v2
+      with:  
+        target: gh-pages
+      env:
+        GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           # uncomment below and fill to pin a version
           # version: SPECIFIC-QUARTO-VERSION-HERE
       
