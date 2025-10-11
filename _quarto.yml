@@ -31,8 +31,8 @@ format:
     theme:
       - sandstone
       - brand
-  pdf:
-    documentclass: scrreprt
+#  pdf:
+#    documentclass: scrreprt
 
 execute:
    freeze: auto
