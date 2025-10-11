@@ -25,6 +25,7 @@ jobs:
       - name: Render and Publish
         uses: quarto-dev/quarto-actions/publish@v2
         with:
+          tinytex: true  
           target: gh-pages
  
 
@@ -72,7 +73,6 @@ jobs:
           target: gh-pages
           env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }} # this secret is always available for github actions
-          tinytex: true
       # - name: Publish to confluence
       #   uses: quarto-dev/quarto-actions/publish@v2
       #   with:
